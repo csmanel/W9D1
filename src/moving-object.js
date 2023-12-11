@@ -16,10 +16,12 @@ class MovingObject {
     console.log('ive been drawn');
   }
 
-  // move() {
-  //   this.pos += this.vel;
-  //   console.log('i have been moved!!!!!!!!!');
-  // }
+  move(ctx) {
+    const [vel1, vel2] = this.vel;
+    this.pos[0] += vel1;
+    this.pos[1] += vel2;
+    this.draw(ctx);
+  }
 }
 
 export default MovingObject;

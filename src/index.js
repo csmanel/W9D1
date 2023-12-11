@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const mo = new MovingObject({
     pos: [250, 250],
-    vel: [10, 10],
+    vel: [100, 100],
     radius: 100,
-    color: '#223',
+    color: '#FE8390',
   });
 
   // window.mo = mo;
   mo.draw(canvasCtx);
-  // mo.move();
+  mo.move(canvasCtx);
 });
